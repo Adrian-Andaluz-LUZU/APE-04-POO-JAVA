@@ -39,4 +39,18 @@ Para resolver este ejercicio, se crean las clases `Producto` y `Venta`. La clase
 ### Evidencia de ejecución
 <img width="440" height="128" alt="image" src="https://github.com/user-attachments/assets/8e2b17f0-b0b7-4790-97cb-5a23cde06728" />
 
+---
+
+## Ejercicio 4: Transferencias
+**Tema:** Objeto como parámetro.
+
+### Enunciado
+Usa la clase `Cuenta` del informe y agrega el método `transferir(Cuenta destino, double monto)`, que retire el monto de la cuenta actual y lo deposite en la cuenta destino solo si hay fondos. En `main`, crea 2 cuentas, haz una transferencia válida y otra que falle.
+
+### Descripción de la resolución
+Para resolver este ejercicio, se utiliza la clase `Cuenta`, que contiene los atributos titular y saldo. Se agrega el método `transferir(Cuenta destino, double monto)`, el cual recibe como parámetro una cuenta de destino y el monto que se desea transferir. El método verifica si la cuenta de origen dispone de fondos suficientes; si es así, descuenta el monto del saldo de origen y lo agrega al saldo de destino. En caso contrario, muestra un mensaje indicando que la transferencia no se pudo realizar. Finalmente, en la clase principal se crean dos cuentas y se prueban una transferencia válida y otra que falle por falta de fondos.
+
+### Evidencia de ejecución
+<img width="293" height="188" alt="image" src="https://github.com/user-attachments/assets/b3717173-d78e-4f75-81fe-bbbdec414f14" />
+
 
