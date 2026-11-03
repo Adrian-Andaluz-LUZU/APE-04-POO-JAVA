@@ -50,3 +50,75 @@ public int calcularArea(double base, double altura) {
 \`\`\`
 
 ---
+## Ejercicio 2: Métodos void para acciones directas
+
+###  Enunciado
+Crear un método en una clase llamada `Bienvenida` que reciba `String nombre` e `int edad`, e imprima un saludo en consola indicando ambos datos[cite: 3].
+
+###  Explicación del Tipo de Retorno
+* **Tipo de retorno:** `void`[cite: 3].
+* **Justificación:** El método se encarga exclusivamente de una tarea de salida (mostrar texto en pantalla mediante `System.out.println`) sin requerir el cálculo de un valor que deba ser devuelto (`return`) al flujo principal del programa.
+
+### Implementación
+\`\`\`java
+public class Bienvenida {
+    public void mostrarBienvenida(String nombre, int edad) {
+        System.out.println("Hola " + nombre + ", tienes " + edad + " años. ¡Bienvenido al sistema!");
+    }
+}
+\`\`\`
+
+---
+
+## Ejercicio 3: Parámetros vs. Argumentos
+
+###  Enunciado
+Identificar parámetros y argumentos en un fragmento de código Java y explicar su diferencia[cite: 4].
+
+### Identificación
+* **Parámetros:** `x` e `y` (definidos en la cabecera del método `public double multiplicar(double x, double y)`).
+* **Argumentos:** `4.0` y `5.0` (los valores reales enviados al invocar el método: `miObjeto.multiplicar(4.0, 5.0)`).
+
+### Diferencia Clave
+* **Parámetro:** Variable local definida en la firma del método que actúa como receptora de datos.
+* **Argumento:** Valor real (o literal/variable con datos) que se suministra al método al momento de llamarlo.
+---
+
+## Ejercicio 4: El comportamiento del paso por valor
+
+### Enunciado
+Analiza el siguiente bloque de código. Si la variable `numero` original en el `main` vale `10` antes de llamar al método, ¿cuál será su valor impreso en consola después de ejecutar el método? Explica por qué.
+
+```java
+public void incrementar(int n) {
+    n = n + 5;
+}
+```
+
+### Resolución y Explicación
+* **Resultado:** El valor de la variable en el `main` **sigue siendo 10**.
+* **Explicación:** En Java, los argumentos de tipos primitivos (como `int`) se pasan **por valor**. Esto significa que el método `incrementar` recibe únicamente una **copia** del dato. La modificación `n = n + 5` solo altera la variable local dentro del ámbito del método y no afecta a la variable original declarada en el `main`.
+
+---
+
+## Ejercicio 5: Creación de un método con múltiples parámetros
+
+### Enunciado
+Agrega un nuevo método a la clase `Calculadora` llamado `calcularPromedio` que reciba tres notas de tipo `double` (`n1`, `n2`, `n3`), calcule el promedio sumándolas y dividiéndolas entre 3, y retorne el resultado final.
+
+### Resolución
+El método debe declarar tres parámetros de tipo `double`, realizar la suma entre paréntesis para asegurar el orden de las operaciones matemáticas, dividir para 3 y retornar un tipo `double`.
+
+```java
+public class Calculadora {
+
+    // Método para calcular el promedio de tres notas
+    public double calcularPromedio(double n1, double n2, double n3) {
+        double promedio = (n1 + n2 + n3) / 3.0;
+        return promedio;
+    }
+
+}
+```
+
+---
