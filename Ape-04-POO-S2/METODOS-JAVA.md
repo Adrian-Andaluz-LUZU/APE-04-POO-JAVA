@@ -122,3 +122,92 @@ public class Calculadora {
 ```
 
 ---
+## Ejercicio 6: Validación de datos (Control de errores)
+
+### Enunciado
+Crea un método `verificarEdad` que reciba una edad (`int edad`). Si la edad es menor a 0 o mayor a 120, debe imprimir "Edad inválida" y retornar `false`. Si es correcta, debe retornar `true`.
+
+### Resolución
+El método utiliza el operador lógico `||` (OR) para verificar los límites fuera del rango válido ($< 0$ o $> 120$) y devolver un valor de tipo `boolean`.
+
+```java
+public class Evaluador {
+
+    // Método para validar rango de edad
+    public boolean verificarEdad(int edad) {
+        if (edad < 0 || edad > 120) {
+            System.out.println("Edad inválida");
+            return false;
+        }
+        return true;
+    }
+
+}
+```
+
+---
+
+## Ejercicio 7: Completar la Clase Producto
+
+### Enunciado
+Rellena los espacios vacíos (`__`) en la siguiente clase para que cumpla con calcular el valor total del inventario de un producto:
+
+```java
+public class Producto {
+    String nombre;
+    int stock;
+    double precioUnitario;
+
+    public __ calcularValorTotal() {
+        __ stock * precioUnitario;
+    }
+}
+```
+
+### Resolución
+Para completar el código:
+1. El tipo de retorno debe ser `double`, ya que la multiplicación de un entero (`int`) por un decimal (`double`) produce un `double`.
+2. Se utiliza la palabra clave `return` para devolver el resultado del cálculo.
+
+```java
+public class Producto {
+    String nombre;
+    int stock;
+    double precioUnitario;
+
+    // Código completado
+    public double calcularValorTotal() {
+        return stock * precioUnitario;
+    }
+}
+```
+
+---
+
+## Ejercicio 8: Instanciación e Invocación en el Main
+
+### Enunciado
+Escribe el código necesario dentro del método `main` de una clase principal para:
+1. Instanciar un objeto de la clase `Producto` llamado `p`.
+2. Asignarle un `stock = 10` y un `precioUnitario = 25.5`.
+3. Llamar al método `calcularValorTotal()`, guardar el resultado en una variable llamada `totalInventario` e imprimirla en consola.
+
+### Resolución
+En este ejercicio se crea una instancia con el operador `new`, se asignan valores a los atributos del objeto y se almacena el retorno del método en una variable local para mostrarlo en pantalla.
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        // a. Instanciar objeto de la clase Producto
+        Producto p = new Producto();
+
+        // b. Asignar atributos
+        p.stock = 10;
+        p.precioUnitario = 25.5;
+
+// c. Invocación del método, almacenamiento e impresión del resultado
+        double totalInventario = p.calcularValorTotal();
+        System.out.println("El valor total del inventario es: $" + totalInventario);
+    }
+}
+```
