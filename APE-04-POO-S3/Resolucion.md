@@ -53,4 +53,18 @@ Para resolver este ejercicio, se utiliza la clase `Cuenta`, que contiene los atr
 ### Evidencia de ejecución
 <img width="293" height="188" alt="image" src="https://github.com/user-attachments/assets/b3717173-d78e-4f75-81fe-bbbdec414f14" />
 
+---
+## Ejercicio 5: Biblioteca
+**Tema:** Colaboración entre clases.
+
+### Enunciado
+Crea tres clases que colaboren entre sí: `Usuario`, `Libro` y `Prestamo`. `Prestamo` tiene atributos de tipo `Usuario` y `Libro`, y su método `registrar()` intenta prestar el libro y muestra un mensaje según el resultado. En `main`, haz que dos usuarios intenten pedir el mismo libro.
+
+### Descripción de la resolución
+Para resolver este ejercicio, se crean tres clases: `Usuario`, `Libro` y `Prestamo`. La clase `Usuario` contiene los atributos nombre y cedula, mientras que la clase `Libro` contiene el título y un atributo booleano que indica si está disponible. Se implementan los métodos `prestar()` para verificar y cambiar la disponibilidad del libro, y `devolver()` para restablecerla. La clase `Prestamo` contiene objetos de tipo `Usuario` y `Libro`, y su método `registrar()` intenta realizar el préstamo mostrando un mensaje según el resultado. Finalmente, en la clase principal se crean dos usuarios que intentan solicitar el mismo libro, comprobando que solamente pueda prestarse cuando está disponible.
+
+### Evidencia de ejecución
+<img width="588" height="82" alt="image" src="https://github.com/user-attachments/assets/3f98a8a9-4e2e-4acc-a6fd-895f01b1ba2a" />
+
+
 
