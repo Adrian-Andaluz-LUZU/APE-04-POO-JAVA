@@ -25,3 +25,18 @@ Para resolver este ejercicio, se crea la clase `Rectangulo` con los atributos ba
 ### Evidencia de ejecución
 <img width="363" height="165" alt="image" src="https://github.com/user-attachments/assets/1492a379-293c-4603-a5cd-6e23041e4228" />
 
+---
+
+## Ejercicio 3: Producto y Venta
+**Tema:** Objeto como parámetro.
+
+### Enunciado
+Crea la clase `Producto` (nombre, precio, stock) con `reducirStock(int cantidad)`, que solo actúa si hay stock suficiente (si no, imprime “Stock insuficiente.”), y `mostrarProducto()`. Crea la clase `Venta` (cantidad) con `aplicar(Producto producto)`, que reduzca el stock y muestre el total a pagar, igual que Cuenta y Transaccion.
+
+### Descripción de la resolución
+Para resolver este ejercicio, se crean las clases `Producto` y `Venta`. La clase `Producto` contiene los atributos nombre, precio y stock, además del método `reducirStock(int cantidad)`, que verifica si existe suficiente inventario antes de disminuir las unidades disponibles. La clase `Venta` contiene el atributo cantidad y el método `aplicar(Producto producto)`, que recibe un objeto de tipo `Producto` como parámetro, solicita la reducción del stock y calcula el total a pagar multiplicando el precio por la cantidad. Finalmente, se realizan pruebas para comprobar una venta y la validación del inventario.
+
+### Evidencia de ejecución
+<img width="440" height="128" alt="image" src="https://github.com/user-attachments/assets/8e2b17f0-b0b7-4790-97cb-5a23cde06728" />
+
+
