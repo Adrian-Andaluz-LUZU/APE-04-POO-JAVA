@@ -11,3 +11,17 @@ Para resolver este ejercicio, se crean dos clases: `Autor` y `Libro`. La clase `
 
 ### Evidencia de ejecución
 <img width="380" height="178" alt="image" src="https://github.com/user-attachments/assets/3d85c2d1-30b0-4e54-932d-e9102a0a7c28" />
+
+---
+## Ejercicio 2: Rectángulo
+**Tema:** Firmas de métodos.
+
+### Enunciado
+Crea la clase `Rectangulo` (base, altura) con los siguientes métodos, usando el tipo de retorno correcto en cada firma. `obtenerDescripcion()` devuelve, por ejemplo, “Rectángulo de 4.0 x 6.0”, y `mostrar()` imprime todos los resultados.
+
+### Descripción de la resolución
+Para resolver este ejercicio, se crea la clase `Rectangulo` con los atributos base y altura. Se implementan los métodos `calcularArea()` para obtener el área, `calcularPerimetro()` para calcular el perímetro y `esCuadrado()` para comprobar si ambos lados tienen la misma medida. Además, se desarrolla `obtenerDescripcion()` para devolver una descripción del rectángulo y `mostrar()` para imprimir todos los resultados. Finalmente, se instancia un objeto en la clase principal para comprobar el funcionamiento de los métodos.
+
+### Evidencia de ejecución
+<img width="363" height="165" alt="image" src="https://github.com/user-attachments/assets/1492a379-293c-4603-a5cd-6e23041e4228" />
+
